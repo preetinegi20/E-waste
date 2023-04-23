@@ -1,52 +1,50 @@
+const ham=document.querySelector(".ham")
+const service=document.querySelector(".service")
+const sublist=document.querySelector(".subList")
+const ul=document.querySelector("nav .lists")
+service.addEventListener("mouseenter",()=>{
+    sublist.classList.toggle("sublistshow")
+})
 
-//dropdownmenu of header to display it flex from none and vise versa
-function dropmenu(){
-    const drop=document.querySelector(".dropd");
-    const list=document.querySelector(".dropd ul");
-    drop.addEventListener("mouseover",()=>{
-      list.classList.add("shownav");
-      list.style.display="flex"
+const lies=document.querySelectorAll("nav .lists li")
+ham.addEventListener("click",()=>{
+    ham.classList.toggle("rotate");
+        ul.classList.toggle("listshow");
+        lies.forEach(li=>{
+            li.classList.toggle("listanimate")
+        })
+})
+
+function reveal (){
+    const reveal=document.querySelectorAll(".reveal")
+    const revealside=document.querySelectorAll(".reveals")
+    const revealsideRight=document.querySelectorAll(".revealss")
+    let wdHT=window.innerHeight;
+     reveal.forEach(element=>{
+        let elementpos=element.getBoundingClientRect().top;
+        if(elementpos<=wdHT/1.3){
+        element.classList.add("reveal-active")
+        revealside.forEach(r=l=>{
+            l.classList.add("reveal-active-side")
+        })      
+        revealsideRight.forEach(r=>{
+            r.classList.add("reveal-active-side-right")
+        })  
+        }
     })
-    drop.addEventListener("mouseout",()=>{
-      list.style.display="none"
-      })
-    }
-    dropmenu()
-    
-    
-    //toggle reaction
-    const lists=document.querySelector(".lists")
-    const list=document.querySelector(".headerItems")
-    const toggle=document.querySelector(".header .items")
-    const moveline=document.querySelector(".toggle")
-    const alllist=document.querySelector(".allList")
-    const move=document.querySelector(".b")
-    function show(){
-    toggle.addEventListener("click",()=>{
-      alllist.classList.toggle("slowin")
-      moveline.classList.toggle("add")
-      if(lists.style.display==="flex"){
-        lists.classList.toggle("slowin")
-        lists.style.display="none"
-      }else{
-        lists.style.display="flex";
-        lists.classList.toggle("slowin")
-      }
-    })
-    list.addEventListener("mouseleave",()=>{
-      moveline.classList.remove("add")
-    })
-    }
-    show();
-    
-    //navigation behavior on scroll
-    function visible(){
+ 
+}
+document.addEventListener("DOMContentLoaded",reveal);
+window.addEventListener("scroll",reveal);
+
+function visible(){
     var previousScroll = window.scrollY;//0
-    let header=document.querySelector(".header")
+    let header=document.querySelector("header")
     window.addEventListener("scroll",()=>{
     let currentScroll = window.scrollY;
       if (previousScroll > currentScroll) {// 13>0
         header.style.top = "0px";
+        header.style.backgroundColor="black"
         header.style.position="fixed"
       } else {
         header.style.top = "-100px";
@@ -55,49 +53,3 @@ function dropmenu(){
     })
     }
     visible()
-    
-    function reveal(){
-      let movecontent=document.querySelectorAll(".reveal");
-      let innerheight=window.innerHeight;
-      movecontent.forEach(cont=>{
-        let elementpos=cont.getBoundingClientRect().top;
-        if(elementpos<=innerheight){
-          cont.classList.add("reveal-active")
-        }
-      })
-      }
-      document.addEventListener("DOMContentLoaded", reveal);
-  
-  window.addEventListener('scroll', reveal);  
-//number increasing
-function numberinc(){
-    window.addEventListener("scroll",()=>{
-  const counters = document.querySelectorAll('.counter');
-  const speed = 200; // The lower the slower
-  counters.forEach(counter => {
-      function updateCount(){
-          const target = +counter.getAttribute('data-target');
-          const count = +counter.innerText;
-  
-          // Lower inc to slow and higher to slow
-          const inc = target / speed;
-  
-          // console.log(inc);
-          // console.log(count);
-  
-          // Check if target is reached
-          if (count < target) {
-              // Add inc to count and output in counter
-              counter.innerText = count + inc;
-              // Call function every ms
-              setTimeout(updateCount)
-          } else {
-              counter.innerText = target;
-          }
-      }
-      updateCount();
-  })
-  })
-  }
-  numberinc()
-  
