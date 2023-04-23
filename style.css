@@ -13,7 +13,7 @@
     --bg:rgba(223, 223, 223, 0.169);
 }
 body{
-    
+    overflow-x: hidden;
 }
 h1, h2, h3, h4, h5{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -636,7 +636,7 @@ height: 5rem;
         font-size: 1.1rem;
         }
 section.footer-container footer .container{
-  width: 100%;
+  width: 96%;
   padding: 3rem 1rem;
   display: flex;
   flex-wrap: wrap;
@@ -785,10 +785,13 @@ section.footer-container footer .container .item:nth-child(2) h3{
       width: 100%;}
       section.customer-service .box-container{
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: unset;
       }
       section.customer-service .box-container .box {
         margin-top: 1rem;
-        width: 28%;}
+        margin-right: 1rem;
+        width: 40%;}
         section.benefits .container .top-container .item-container {
   width: 100%;}
   section.benefits .container .top-container {
@@ -798,18 +801,92 @@ section.footer-container footer .container .item:nth-child(2) h3{
     }
     section.team .top-container .container {
       flex-wrap: wrap;
+      justify-content: unset;
     }
     section.team .top-container .container .item {
-      width: 29%;
+      width: 25%;
+      margin-right: 1rem;
 }
 section.team .top-container .container .item .image {
   height: 12rem;}
   section.footer-container footer .container {
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
   }
   section.footer-container footer .container .item{
    width: 30%;
    margin-top: 2rem;
   }
+}
+@media (max-width:558px) {
+  .flex-box h1 {font-size: 2rem;
+  }
+  .flex-box p {
+    text-align: center;
+  }
+  .services {width: 100%;
+  }
+  .services .content p {font-size: 1.2rem;
+  }
+  .main-container-first .about h1 {font-size: 2rem;}
+  .services .content h1 {font-size: 1.6rem;}
+  section.team .top-container .container .item {
+    width: 38%;
+  }
+  section.team .top-container {
+   margin-bottom: 0;
+  }
+  .services .container .contents .list {width:100%;flex-direction: column;
+  align-items: center;text-align: center;}
+  section.customer-service .box-container .box {
+    width: 100%;
+    margin-right: 0;
+  }
+  section.benefits .container .text h3 {
+    font-size: 1.7rem;
+  }
+  section.benefits .container .text h3 span{
+    font-size: 1.7rem;
+  }
+  section.benefits .container .top-container .image-container {width:60%;}
+ 
+section.benefits .container {
+  padding-bottom: 0rem;
+}
+.mySwipered swiper-slide .container .item {
+  margin: 5rem auto;
+}
+section.about .main-container .container .item {
+  display: none;
+}
+@media (max-width:386px) {
+  section.What-We-Recycle .main-container .equip {flex-direction: column;}
+  section.team .top-container .container .item {
+    width: 35%;
+    margin-right: .5rem;
+  }
+section.team .top-container .container .item{
+border-radius: 2px;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+section.footer-container footer .container .item{
+width: 48%;
+}
+section.footer-container footer .container .item:first-child h1{
+ font-size: 1.7rem;}
+section.footer-container footer .container .item a{
+font-size: .9rem;
+  }
+  section.footer-container footer .container .item:last-child h2 {
+    font-size: 1.7rem; 
+  }
+  section.footer-container footer .container .item p{
+    font-size: .9rem;
+  }
+  section.footer-container footer .container .item .icons i{
+    font-size: 1rem;
+  }
+}
 }
