@@ -2,7 +2,6 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing:border-box;
     font-family: 'Ysabeau', sans-serif;
     --white:white;
     --a-color:rgb(25, 52, 25);
@@ -126,12 +125,8 @@ bottom: -.3rem;
  font-size: 1rem;
  margin-left: 0rem;
  font-weight: 400;
- transition: .4s ease;
 }
-.main-container-first header nav .subList div.a a:hover{
- color: rgb(0, 108, 8);
- font-weight: 600;
- }
+
 .main-container-first header nav .service .subList.sublistshow{
   display: flex;
  animation: listtss .3s linear;
@@ -711,6 +706,14 @@ section.footer-container footer .container .item:nth-child(2) h3{
                         margin-left: 1rem;
                             }
 @media(max-width:800px){
+  .main-container-first header nav .service .subList.sublistshow{
+    width: 12rem;
+left: -15rem;
+top:-0.1rem
+}
+  .main-container-first header nav ul a:nth-child(3):after{
+    bottom: -1.2rem;
+    }
     .main-container-first header nav ul.lists{
         display: none;
     }
@@ -820,6 +823,14 @@ section.team .top-container .container .item .image {
   }
 }
 @media (max-width:558px) {
+  .main-container-first header nav .service .subList.sublistshow{
+ position: static;
+}
+.main-container-first header nav ul.listshow {
+  width: 100%;
+}.main-container-first header nav .service .subList.sublistshow {
+  width: 3rem;}
+ 
   .flex-box h1 {font-size: 2rem;
   }
   .flex-box p {
