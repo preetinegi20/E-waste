@@ -11,6 +11,7 @@
     --fontgrey:rgb(31, 26, 26);
     --p:rgb(99, 88, 88);
     --bg:rgba(223, 223, 223, 0.169);
+        overflow-x: hidden;
 }
 body{
     overflow-x: hidden;
@@ -180,7 +181,7 @@ top: 10%;
   
   swiper-container {
     width: 100%;
-    height: 70vh;
+    height: 80vh;
   }
 
 
@@ -211,9 +212,10 @@ background-image: url(./images/battery-recycling-1588363313251.webp);
     margin: auto;
     display: flex;
     flex-direction: column;
-    padding: 12rem 0rem;
+    padding: 10rem 0rem;
     color: var(--white);
     align-items: center;
+    margin: 5rem auto;
   }
   .main-container-first .listitems{
    position: relative;
@@ -558,7 +560,7 @@ section.team .top-container .container .item{
       font-weight: 300;
      }
      section.What-We-Recycle .main-container{
-      width: 100%;
+      width: 90%;
       margin: auto;
       padding: 2rem 0rem 5rem 0rem;
       background-color: var(--bg);
@@ -636,12 +638,13 @@ height: 5rem;
         font-size: 1.1rem;
         }
 section.footer-container footer .container{
-  width: 100%;
+  width: 89%;
   padding: 3rem 1rem;
   display: flex;
   flex-wrap: wrap;
-  background-color: #112811;
-color:rgb(227, 189, 189);
+  background-color: var(--green);
+
+  color: rgb(0, 30, 56);
 }
 section.footer-container footer .container .item{
   width: 24%;
@@ -888,7 +891,7 @@ border-radius: 2px;
     margin-bottom: 1rem;
 }
 section.footer-container footer .container .item{
-width: 48%;
+width: 100%;
 }
 section.footer-container footer .container .item:first-child h1{
  font-size: 1.7rem;}
