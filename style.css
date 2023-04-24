@@ -821,7 +821,7 @@ top:-0.1rem
 section.team .top-container .container .item .image {
   height: 12rem;}
   section.footer-container footer .container {
-    justify-content: space-evenly;
+    justify-content:flex-start;
     flex-wrap: wrap;
   }
   section.footer-container footer .container .item{
