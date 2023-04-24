@@ -44,7 +44,6 @@ function visible(){
     let currentScroll = window.scrollY;
       if (previousScroll > currentScroll) {// 13>0
         header.style.top = "0px";
-        header.style.backgroundColor="black"
         header.style.position="fixed"
       } else {
         header.style.top = "-100px";
