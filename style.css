@@ -642,6 +642,7 @@ section.footer-container footer .container{
   padding: 3rem 1rem;
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
   background-color: rgb(14, 41, 37);
 
   color: rgb(255, 238, 238);
@@ -824,7 +825,7 @@ section.team .top-container .container .item .image {
     flex-wrap: wrap;
   }
   section.footer-container footer .container .item{
-   width: 30%;
+   width: 40%;
    margin-top: 2rem;
   }
 }
@@ -842,6 +843,8 @@ section.team .top-container .container .item .image {
   .flex-box p {
     text-align: center;
   }
+    section.footer-container footer .container .item{
+        width: 50%;}
   .services {width: 100%;
   }
   .services .content p {font-size: 1.2rem;
