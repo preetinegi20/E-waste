@@ -13,9 +13,7 @@
     --bg:rgba(223, 223, 223, 0.169);
    
 }
-body{
-    overflow-x: hidden;
-}
+
 h1, h2, h3, h4, h5{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
