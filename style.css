@@ -843,8 +843,7 @@ section.team .top-container .container .item .image {
   .flex-box p {
     text-align: center;
   }
-    section.footer-container footer .container .item{
-        width: 50%;}
+  
   .services {width: 100%;
   }
   .services .content p {font-size: 1.2rem;
@@ -852,7 +851,7 @@ section.team .top-container .container .item .image {
   .main-container-first .about h1 {font-size: 2rem;}
   .services .content h1 {font-size: 1.6rem;}
   section.team .top-container .container .item {
-    width: 38%;
+    width: 47%;
       margin-right:1rem;
   }
   section.team .top-container {
