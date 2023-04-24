@@ -635,6 +635,9 @@ height: 5rem;
       .mySwipered swiper-slide .container .item p.job{
         font-size: 1.1rem;
         }
+section.footer-container{
+    overflow:hidden;
+}
 section.footer-container footer .container{
   width: 100%;
   padding: 3rem 1rem;
