@@ -853,6 +853,7 @@ section.team .top-container .container .item .image {
   .services .content h1 {font-size: 1.6rem;}
   section.team .top-container .container .item {
     width: 38%;
+      margin-right:1rem;
   }
   section.team .top-container {
    margin-bottom: 0;
