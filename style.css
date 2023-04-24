@@ -639,7 +639,6 @@ section.footer-container{
     overflow:hidden;
 }
 section.footer-container footer .container{
-  width: 100%;
   padding: 3rem 1rem;
   display: flex;
   flex-wrap: wrap;
