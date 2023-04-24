@@ -817,6 +817,7 @@ top:-0.1rem
     }
     section.team .top-container .container .item {
       width: 25%;
+        height:13rem;
       margin-right: 1rem;
 }
 section.team .top-container .container .item .image {
@@ -852,8 +853,8 @@ section.team .top-container .container .item .image {
   .main-container-first .about h1 {font-size: 2rem;}
   .services .content h1 {font-size: 1.6rem;}
   section.team .top-container .container .item {
-    width: 47%;
-      margin-right:1rem;
+       width: 37%;
+    height: 12rem;
   }
   section.team .top-container {
    margin-bottom: 0;
