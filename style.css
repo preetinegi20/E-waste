@@ -57,6 +57,9 @@ li,a{
 .main-container-first header{
     width: 100%;
     height: 5rem;
+    position: fixed;
+    z-index: 99999;
+    background-color: rgb(248, 248, 248);
 }
 .main-container-first header nav{
     display: flex;
@@ -194,13 +197,13 @@ top: 10%;
 background-image: url(./images/battery-recycling-1588363313251.webp);
   }
      .bg:nth-child(2){
-    background-image: url(./images/Can-Lithium-Ion-Batteries-be-Recycled-in-Canada.jpg);
+    background-image: url(./images/E-Waste.jpg)
   }
   .bg:nth-child(3){
    background-image: url(./images/EV-Li-Ion-Battery.jpg); 
   }
   .bg:nth-child(4){
-   background-image: url(./images/Why-do-we-recycle-e-waste.jpg); 
+   background-image: url(./images/WasteRecycling21-min-scaled\ \(1\).jpg); 
   }
   .flex-box
   {
@@ -237,7 +240,7 @@ background-image: url(./images/battery-recycling-1588363313251.webp);
     font-size: .8rem;
  color: var(--white);
  background-color: var(--button);
- padding: .5rem .7rem;
+ padding: .7rem 1rem;
  border-radius: 4px;
 }
 .flex-box p{
@@ -451,8 +454,9 @@ section.customer-service .box-container .box p{
 section.benefits .container .text{
   display: flex;
   flex-direction: column;
-  width: 100%; padding: 1rem;
+  width: 90%; padding: 1rem;
  align-items: center;
+ margin: auto;
 }
 section.benefits .container .text h3{
   width: 100%;
@@ -472,7 +476,7 @@ section.benefits .container .text p{
  font-size: 1.1rem;
 }
 section.benefits .container .top-container{
-  width: 100%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -871,6 +875,7 @@ section.benefits .container {
 section.about .main-container .container .item {
   display: none;
 }
+}
 @media (max-width:386px) {
   section.What-We-Recycle .main-container .equip {flex-direction: column;}
   section.team .top-container .container .item {
@@ -899,6 +904,12 @@ font-size: .9rem;
   }
   section.footer-container footer .container .item .icons i{
     font-size: 1rem;
-  }
+}
+section.benefits .container .top-container {
+  padding: 0%;
+}
+section.benefits .container .text {padding: 0%;}
+.flex-box {
+  padding: 4rem 0rem 0rem 0rem;
 }
 }
