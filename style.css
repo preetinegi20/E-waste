@@ -10,9 +10,7 @@
     --green:green;
     --fontgrey:rgb(31, 26, 26);
     --p:rgb(99, 88, 88);
-    --bg:rgba(223, 223, 223, 0.169);
-        overflow-x: hidden;
-}
+    --bg:rgba(223, 223, 223, 0.169);}
 body{
     overflow-x: hidden;
 }
