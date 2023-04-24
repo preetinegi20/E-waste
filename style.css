@@ -648,7 +648,8 @@ section.footer-container footer .container{
   color: rgb(255, 238, 238);
 }
 section.footer-container footer .container .item{
-  width: 24%;
+  width: 22.5%;
+    margin-right:1rem;
   display: flex;
   flex-direction: column;
 }
