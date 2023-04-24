@@ -640,9 +640,8 @@ section.footer-container footer .container{
   padding: 3rem 1rem;
   display: flex;
   flex-wrap: wrap;
-  background-color: var(--green);
-
-  color: rgb(0, 30, 56);
+  background-color: #112811;
+color:rgb(227, 189, 189);
 }
 section.footer-container footer .container .item{
   width: 24%;
